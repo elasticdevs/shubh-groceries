@@ -3,21 +3,21 @@ import React from 'react';
 
 
 export default function Table({arr}){
-    let flag = 1;
+    let flag = true;
     return (
         <table>
         {
             arr.map((element) =>{
             return <>
-            {flag && <tr>{Object.entries(element).map(([key,value])=>(
+            {flag && <thead><tr>{Object.entries(element).map(([key,value])=>(
               <th>{key}</th>
-            ))}</tr>}
-            <tr>
+            ))}</tr></thead>}
+            <tbody><tr>
             {Object.entries(element).map(([key,value])=>(
               <td>{value}</td>
             ))}
-            </tr>
-            {flag = 0}
+            </tr></tbody>
+            <tfoot style = {{display:'none'}}>{flag = false}</tfoot>
             </>
             })
         }

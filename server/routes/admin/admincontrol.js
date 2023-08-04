@@ -20,9 +20,9 @@ function getProductsCategory(req, res) {
 
 
 function addProducts(req, res) {
-    const { name, price, c_id, stock, des, b_id, loc } = req.body;
+    const {name, price, c_id, stock, des, b_id, loc } = req.body;
     console.log(req.body.c_id)
-        pool.query(queries.addProducts, [name, price, c_id, stock, des, b_id, loc], (err, results) => {
+        pool.query(queries.addProducts,[name, price, c_id, stock, des, b_id, loc], (err, results) => {
             if (err) throw err;
             res.send("Successfully added");
         })
@@ -50,7 +50,7 @@ function updateProducts(req,res){
         if(!results.rows.length){
             return res.send("does not exists");
         }
-        const { name, price, c_id, stock, des, b_id, loc } = req.body;
+        const {name, price, c_id, stock, des, b_id, loc } = req.body;
         pool.query(queries.updateProducts,[id,name, price, c_id, stock, des, b_id, loc],(err,results)=>{
             if(err) throw err;
             res.send("Updated Successfully");
