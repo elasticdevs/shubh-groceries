@@ -1,0 +1,28 @@
+.top-container{
+   display: flex;
+   justify-content: space-between;
+   padding : 16px 0px;
+   margin : 0px 45px;
+   align-items: center;
+   font-size: 12px;
+   height : 48px;
+   border-bottom: 1px solid #d1d1d1;
+}
+
+.components1{
+    display : flex;
+    
+}
+.components1 a{
+    margin-right : 100px;
+    color : #151515;
+    text-decoration: none;
+}
+.components2{
+    display: flex;
+}
+.components2 a{
+    margin-left : 100px;
+    color : #6A983C;
+    text-decoration: none;
+}

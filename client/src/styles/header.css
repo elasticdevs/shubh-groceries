@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+.header-container{
+    height : 130px;
+    display:  flex;
+    margin : 0px 45px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title-image{
+    height : 18px;
+    width : 177px;
+}
+
+.search-box{
+    width : 500px;
+    height : 42px;
+    background-color : #f9f9f9;
+    display: flex;
+    align-items: center;
+    border : 1px solid #d1d1d1;
+    border-radius: 12px;
+
+
+}
+
+.select-box{
+    width : 130px;
+    border : none;
+    background-color: #f9f9f9;
+    color : #151515;
+    margin-left : 16px; 
+    font-family : 'Poppins';
+    font-weight: 600;
+    font-size: 15px;
+
+}
+.search-label{
+    color : #d1d1d1;
+    margin-left : 40px;
+}
+.search-feild{
+    border : 0;
+    background-color: #f9f9f9;
+    width : 250px;
+    margin-left : 24px;
+    font-size: 14px;
+    font-family: 'Open Sans';
+    outline: none;
+}
+.icons{
+    display: flex;
+    justify-content: space-between;
+    width : 100px;
+}
+
+.navbar{
+    display: flex;
+    background-color :#f9f9f9;
+    height : 55px;
+    margin: 0 45px;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
