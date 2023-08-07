@@ -55,3 +55,18 @@
     color:#a9a9a9;
     margin-left: 25px;
 }
+
+.product-pattern{
+    height : 280px;
+    border : 1px  solid #d1d1d1;
+    border-radius: 15px;
+    margin-right: 45px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-background{
+    width : 268px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
