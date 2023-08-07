@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 .navbar{
     display: flex;
@@ -56,17 +56,94 @@
     margin-left: 25px;
 }
 
+.display-products{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+
+}
+
 .product-pattern{
     height : 280px;
     border : 1px  solid #d1d1d1;
-    border-radius: 15px;
+    border-radius: 12px;
     margin-right: 45px;
     display: flex;
     justify-content: space-between;
+    font-family: 'Open Sans';
+}
+
+.products-body-layout{
+    display: flex;
+    justify-content: space-between;
+}
+
+.filters{
+    width : 400px;
 }
 
 .image-background{
     width : 268px;
     background-color: #f9f9f9;
-    border-radius: 10px;
+    border-radius: 12px;
 }
+
+.product{
+    display: flex;
+    margin : 32px;
+    width : 600px;
+    justify-content: space-between;
+}
+
+.product-detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-info{
+    display: flex;
+    width : 269px;
+    justify-content: space-between;
+    color: #a9a9a9;
+    font-size: 14;
+}
+
+.price-detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.button-product-details{
+    height : 47px;
+    width : 164px;
+    background-color: #6A983C;
+    border : 2px solid #46760A;
+    border-radius: 10px;
+    color :#ffffff;
+    font-family:'Poppins';
+    font-weight: 600;
+    font-size:15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-left: 10px;
+
+}
+
+.button-wishlist{
+    height : 36px;
+    width: 164px;
+    background-color: #f5f5f5;
+    font-size: 15px;
+    font-family: "Poppins";
+    display: flex;
+    justify-content:center;
+    align-items :center;
+    font-weight: 600;
+    border-radius: 12px;
+    margin-left : 10px;
+}
+

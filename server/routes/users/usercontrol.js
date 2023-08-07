@@ -47,8 +47,15 @@ function getCategories(req,res){
     })
 }
 
+function getbrandbyid(req,res){
+    const id = parseInt(req.params.id);
+    pool.query(queries.getbrandbyid,[id],(err,results) =>{
+        if(err) throw err;
+        res.json(results.rows);
+    })
+}
 
 
 
 
-module.exports = { getProductsall, getProductsCategory,searchResults,searchResultsByCategory,getCategories}
+module.exports = { getProductsall, getProductsCategory,searchResults,searchResultsByCategory,getCategories,getbrandbyid}

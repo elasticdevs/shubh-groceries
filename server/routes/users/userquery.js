@@ -9,8 +9,10 @@ const searchResults =  "SELECT * FROM Products WHERE product_name LIKE $1 ";
 
 const getCategories = "SELECT * FROM Category";
 
+const getbrandbyid  = "SELECT brand_name FROM Brand WHERE b_id = $1";
 
 
 
 
-module.exports = { getProductsall, getProductsCategory,searchResults,searchResultsByCategory,getCategories};
+
+module.exports = { getProductsall, getProductsCategory,searchResults,searchResultsByCategory,getCategories,getbrandbyid};

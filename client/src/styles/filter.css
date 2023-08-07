@@ -1,0 +1,22 @@
+.category-count{
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    margin : 20px 0px;
+    margin-left : 45px;
+}
+
+.category-count div{
+    background-color: #f4f8ec;
+    color : #6a983c;
+    font-family: 'Poppins';
+    font-weight: 600;
+    border-radius: 12px;
+    padding:5px;
+}
+
+.brandslist{
+    display: flex;
+    margin-left: 45px;
+    margin-bottom: 10px;
+}

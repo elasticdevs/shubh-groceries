@@ -14,4 +14,6 @@ router.get('/search/:id/:text',usercontrol.searchResultsByCategory)
 
 router.get('/search/:text',usercontrol.searchResults)
 
+router.get('/brand/:id' ,usercontrol.getbrandbyid)
+
 module.exports = router; 
