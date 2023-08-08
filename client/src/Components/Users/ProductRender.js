@@ -1,24 +1,27 @@
-import React, { useEffect, useState } from "react"; 
+import React  from "react"; 
+import { useState,useEffect } from "react";
 import '../../styles/body.css';
-// import api from '../../api.js';
+import api from '../../api.js';
+
 
 
 export default function ProductRender({element}){
-    // const[name,Setname] = useState("");
+    const[name,Setname] = useState([{brand_name : ""}]);
 
-    // useEffect(()  =>{
-    //     const getbrands = async(id) =>{
-    //         try{
-    //         const response = await api.get(`/products/brand/${id}`)
-    //         Setname(response.data)
-    //         }
-    //         catch(error){
-    //             console.log(error.response.status)
-    //         }
+    useEffect(()  =>{
+        const getbrands = async(id) =>{
+            try{
+                if(id){
+                const response = await api.get(`/products/brand/${id}`)
+                Setname(response.data)}
+            }
+            catch(error){
+                console.log(error.response.status)
+            }
 
-    //     }
-    //     getbrands(element.brand_id)
-    // },[element])
+        }
+        getbrands(element.brand_id)
+    },[element])
     return (
         <div className="product-pattern">
 
@@ -40,7 +43,7 @@ export default function ProductRender({element}){
 
                         <div>
                             <p><span style={{color : "#6A983C"}}>New</span> (Extra fresh)</p>
-                            <p></p>
+                            <p>{name[0].brand_name}</p>
                             <p>{element.seller_location}</p>
                             <p style={{color : '#6A983C'}}>{element.stock} pcs</p>
                         </div>

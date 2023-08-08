@@ -48,6 +48,30 @@
     font-size: 14px;
     font-family: 'Open Sans';
     outline: none;
+    position : relative
+
+}
+.search-option{
+    display: flex;
+    flex-direction: column;
+}
+
+.search-dropdown{
+    position: absolute;
+    margin-top : 30px;
+    margin-left :24px;
+    background-color: #f9f9f9;
+    width : 250px;
+}
+
+.search-dropdown li{
+    list-style-type: none;
+    margin : 10px;
+
+}
+.search-dropdown li:hover{
+    background-color: #d1d1d1;
+    cursor: pointer;
 }
 .icons{
     display: flex;

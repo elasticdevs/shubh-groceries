@@ -7,11 +7,10 @@ import { useState } from 'react';
 import { useEffect } from "react";
 
 
-export default function Body(){
+export default function Body({products,setProducts}){
     const [categorylist,setCategorylist] = useState([])
     const [selectCategory,setSelectCategory] = useState({c_id : "" ,category_name :""})
     const[brands,setBrands] = useState([])
-    const [products,setProducts] = useState([{ product_id: "", product_name: "", price: "",category_id: "", brand_id : "",description: "",seller_location: "",stock: ""}])
 
     useEffect(() =>{
         const fetchcategories = async() =>{
@@ -49,7 +48,7 @@ export default function Body(){
             }
         }
         fetchproducts(selectCategory.c_id)
-    },[selectCategory])
+    },[selectCategory,setProducts])
     console.log(products)
     return (<>
         <Navbar categorylist = {categorylist} selectCategory = {selectCategory} setSelectCategory = {setSelectCategory}/>
